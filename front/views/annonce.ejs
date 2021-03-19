@@ -1,0 +1,28 @@
+<%- include('partials/head') %>
+<%- include('partials/nav') %>
+
+<main>
+    <div class="annonces">
+        <h2><%= annonce.titre %></h2>
+        <hr/>
+        <div>
+            <span class="subtitle">Description du bien :</span>
+            <p><%= annonce.description %></p>
+        </div>
+        <div>
+            <span class="subtitle">Adresse :</span> 
+            <p><%= annonce.adresse %> <%= annonce.code_postal %> <%= annonce.ville %></p>
+        </div>
+        <div>
+            <span class="subtitle">Prix :</span>
+            <p><%= annonce.prix %> € / mois</p>
+        </div>
+
+        <div style="margin-top: 5rem;">
+            <code>Ref: <%= annonce._id %></code>
+        </div>
+
+    </div>
+</main>
+
+<%- include('partials/footer') %>

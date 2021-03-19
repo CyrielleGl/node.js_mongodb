@@ -1,0 +1,31 @@
+<%- include('partials/head') %>
+<%- include('partials/nav') %>
+
+<main>
+  <div class="annonces">
+    <h2>Annonces disponibles</h2>
+
+    <br />
+
+    <table>
+      <tbody>
+        <% annonces.forEach((annonce, i=index) => { %>
+          <tr>
+            <td><%= i+1 %>) </td>
+              <td><%= annonce.titre %> : </td>
+              <td>"<%= annonce.description.substring(0, 15) %>..."</td>
+              <td class="button">
+                <a href="http://localhost:4000/annonce/<%= annonce._id%>">Voir le detail</a>
+              </td>
+              <td class="button">
+                <a href="http://localhost:4000/update/annonce/<%= annonce._id%>">Mettre à jour</a>
+              </td>
+              <td><button style="margin-top: 0rem !important; margin-left: 0.5rem; color: red;" type="button" onclick="deleteAnnonce('<%= annonce._id %>')">Supprimer</button></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<%- include('partials/footer') %>

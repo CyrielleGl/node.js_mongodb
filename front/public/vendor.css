@@ -1,0 +1,81 @@
+main {
+    min-height: 30rem;
+}
+
+nav {
+    background-color: antiquewhite;
+    text-align: center;
+    min-height: 2rem;
+    vertical-align: middle;
+}
+
+ul li {
+    display: inline-block !important;
+    text-align: center;
+    padding: 1rem;
+    margin: auto 0 auto 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    color: green;
+}
+
+hr {
+    counter-increment: hr;
+    text-align: center;
+    position: relative;
+    background: none;
+    margin: 1em 15em 2em 15em;
+    border: 0;
+    border-top: dashed 1px #dddddd;
+}
+
+.annonces {
+    text-align: center;
+}
+
+.update {
+    text-align: center;
+    margin: 2rem 6rem 2rem 6rem;
+}
+
+.top-margin {
+    margin-top: 1rem;
+}
+
+button {
+    margin-top: 1rem;
+}
+
+.subtitle {
+    font-weight: bold;
+}
+
+.button {
+    appearance: auto;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    margin-left: 0.5rem;
+}
